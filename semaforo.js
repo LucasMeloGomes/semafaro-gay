@@ -26,7 +26,7 @@ const turnOn = {
     'yellow':   () => img.src = './img/amarelo.png',
     'green':    () => img.src = './img/verde.png',
     'automatic': () => {
-        intervalId = setInterval( changeColor, 1 )
+        intervalId = setInterval( changeColor, 1000 )
         buttons.children.automatic.id = 'stop';
     },
     'stop': () => {
